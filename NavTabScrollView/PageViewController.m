@@ -31,6 +31,7 @@
     // 添加label
     UILabel *label = [[UILabel alloc] init];
     label.text = title;
+    label.textColor = [UIColor whiteColor];
     label.frame = CGRectMake(150, 300, 100, 50);
     [self.view addSubview:label];
 }

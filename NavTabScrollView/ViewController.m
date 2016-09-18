@@ -15,12 +15,15 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
     // 添加子view
     NavTabViewController *navTabViewController = [[NavTabViewController alloc] init];
+    // 添加child viewcontroller使其响应事件
+    [self addChildViewController:navTabViewController];
     [self.view addSubview:navTabViewController.view];
 }
 
